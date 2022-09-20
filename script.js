@@ -17,10 +17,23 @@ function taskOne(item) {
 
 for (let i = 1; i < 101; i++) {
     if (i % 3 == 0){
-        console.log("Fizz");
+      console.log((i) + ". Fizz");
     }else if (i % 5 == 0){
-        console.log("Buzz");
+      console.log((i) +". Buzz");
     }else{
-        console.log(i);
+      console.log((i) +". FizzBuzz");
     } 
 }
+
+function taskThree(item) {
+  let a = item.split("");
+  if (item === a.reverse().join("")) { 
+    return "Палиндром" 
+  }else{
+    return "Не палиндром"
+  }
+}
+  
+console.log(taskThree("level"));
+console.log(taskThree("three"));
+console.log(taskThree("aba"));
